@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="ui-card">
+      <div class="profile-picture">
+        <img
+          data-testid="profilePicture"
+          src="./images/profile.jpg"
+          alt="David Umanah"
+          style="width: 100%; object-fit: contain"
+        />
+      </div>
+      <div class="ui-card-text">
+        <h4 data-testid="fullName">David Umanah</h4>
+        <div class="job-title-location-wrapper">
+          <p data-testid="jobTitle" class="job-title">Software Developer</p>
+          <span>|</span>
+          <p data-testid="currentLocation" class="current-location">
+            Lagos, Nigeria
+          </p>
+        </div>
+        <p data-testid="shortBio" class="short-bio">
+          I'm David, a frontend developer passionate about crafting seamless
+          user experiences with modern web technologies. I specialize in
+          building responsive, interactive, and visually appealing web
+          applications using Next.js, React, and TypeScript. With a keen eye for
+          design and performance, I strive to create intuitive interfaces that
+          enhance user engagement. Always eager to learn and innovate, I enjoy
+          solving challenges and bringing creative ideas to life.
+        </p>
+        <a
+          data-testid="emailAddress"
+          class="email"
+          href="mailto:david_umanah@yahoo.com"
+          >david_umanah@yahoo.com</a
+        >
+        <div class="day-time-wrapper">
+          <p id="day"></p>
+          <span>|</span>
+          <p id="time" data-testid="currentTimeUTC"></p>
+        </div>
+        <ul data-testid="socialLinks" class="social-links">
+          <li>
+            <a href="https://github.com/Davethadev" target="_blank"
+              ><img src="./assets/github.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="www.linkedin.com/in/david-umanah-364a2924b" target="_blank"
+              ><img src="./assets/linkedin.svg" alt=""
+            /></a>
+          </li>
+          <li>
+            <a href="https://mobile.twitter.com/_callmedaveed" target="_blank"
+              ><img src="./assets/twitter.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
